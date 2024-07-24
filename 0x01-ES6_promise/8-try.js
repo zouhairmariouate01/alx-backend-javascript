@@ -1,4 +1,7 @@
-import divideFunction from './8-try';
-
-console.log(divideFunction(10, 2));
-console.log(divideFunction(10, 0));
+export default function divideFunction(numerator, denominator) {
+  if (denominator === 0) {
+    throw Error('cannot divide by 0');
+  } else {
+    return numerator / denominator;
+  }
+}
